@@ -1,7 +1,7 @@
 <!doctype HTML>
 <html>
 <head>
-  <title> Archv Demo </title>
+  <title>Content Based Image Recognition for Early Modern Images</title>
 
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
@@ -32,26 +32,30 @@
 
 <div class="main">
   <div class="text">
-    <h1 class="main-h1"> Scan Database </h1>
-    <p> Archv (Archive-vision) is a tool to search an imageset to find the best matches with your seed image.
+    <h1 class="main-h1"> Archive Vision </h1>
+    <p> Archv is a tool to search an imageset to find the best matches with your seed image.
         This page allows you to upload and compare an image of your choice with either the English Broadside Ballad Archive imageset 
         or a curated image set from the British Library's Flickr. </p>
-    <p> Go to the <a href="./pages/overview.html">overview </a> page to learn how it works. </p>
-    <p> Go to the <a href="./pages/download.html">download </a> page to set up on your system. </p>
-
-    <br>
+    <center><p> Go to the <a href="./pages/overview.html">overview </a> page to learn how it works. </p></center>
     <hr>
     <h3 class="main-h3"> Step One </h3>
+    <p> Select the Image set that you would like to compare your image to: </p>
+    <center>
+    <label>
+       <input type="radio" checked id="ebba" value="Ebba" name="imageset"> 
+       <p> English Broadside Ballad Archive</p>
+    </label>
+    <label>
+       <input type="radio" id="flickr" value="BL-flickr" name="imageset"> 
+       <p> British Library Flickr Imageset</p>
+    </label>
+    </center>
+  
+    <h3 class="main-h3"> Step Two </h3>
+    <p> Upload your image as the seed image. When the file is uploaded, the keypoints overlayed on the image will be displayed. </p>
     <p> If you do not have an image, try one of these: <p>
     <p style="margin-left: 25px"> British Library Flickr: <a href="./images/flickr/11000098404_fb25d9b77d_o.jpg"> 11000098404_fb25d9b77d_o.jpg </a> <br>
         Broadside Ballad: <a href="./images/ballads/30165-40.jpg"> 30165-40.jpg </a></p>
-    <p> Select the Image set that you would like to compare your image to: <p>
-<input type="radio" checked id="ebba" value="Ebba" name="imageset"> Ebba <input type="radio" id="flickr" value="BL-flickr" name="imageset"> BL-flickr
-  
-<br>
-<br><br>
-    <h3 class="main-h3"> Step Two </h3>
-    <p> Upload your image as the seed image. When the file is uploaded, the keypoints overlayed on the image will be displayed. </p>
 
     <!-- UPLOAD -->
     <input type="file" name="fileToUpload" id="fileToUpload">
